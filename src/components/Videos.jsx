@@ -3,6 +3,8 @@ import { VideoCard, ChannelCard } from './';
 
 
 const Videos = ({ videos }) => {
+    console.log("🚀 ~ file: Videos.jsx:6 ~ Videos ~ videos", videos)
+    
     return (
         <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
             {videos.map((item, idx,) => (
