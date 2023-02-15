@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
-import { NavBar, Feed , VideoDetail , ChannalDetail , SearchFeed } from "./components/";
+import { NavBar, Feed , VideoDetail , ChannelDetail , SearchFeed } from "./components/";
 
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
       <Routes>
         <Route path="/" exact element={<Feed />}/>
         <Route path="/video/:id" element={<VideoDetail />} />
-        <Route path="/channal/:id" element={<ChannalDetail />} />
+        <Route path="/channal/:id" element={<ChannelDetail />} />
         <Route path="/search/:searchTerm" element={<SearchFeed />} />
       </Routes>
     </Box>
