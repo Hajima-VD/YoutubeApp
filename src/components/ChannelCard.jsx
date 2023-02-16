@@ -20,7 +20,7 @@ const ChannelCard = ({ channelDetail }) => {
 
             }}>
             <Link
-                to={`https://www.youtube.com/channal/${channelDetail?.id?.channelId}`}>
+                to={`/${channelDetail?.id?.channelId}`}>
                 <CardContent
                     sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', color: '#fff' }}>
                     <CardMedia 
