@@ -5,13 +5,14 @@ import { NavBar, Feed , VideoDetail , ChannelDetail , SearchFeed } from "./compo
 
 const App = () => (
   <BrowserRouter>
-    <Box sx={{ backgroundColor: "#000" }}>
+    <Box 
+    sx={{ backgroundColor: '#000' }}>
       <NavBar />
       
       <Routes>
         <Route path="/" exact element={<Feed />}/>
         <Route path="/video/:id" element={<VideoDetail />} />
-        <Route path="/channal/:id" element={<ChannelDetail />} />
+        <Route path="/channel/:id" element={<ChannelDetail />} />
         <Route path="/search/:searchTerm" element={<SearchFeed />} />
       </Routes>
     </Box>
