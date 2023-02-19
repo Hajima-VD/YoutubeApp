@@ -24,7 +24,7 @@ const SearchBar = () => {
             }}>
             <input className="search-bar"
                 placeholder="Search..."
-                // value={setsearchTerm}
+                value={searchTerm}
                 onChange={(e) => setsearchTerm(e.target.value)} />
                 <IconButton type="submit" 
                 sx={{ p:'10px' ,  color :'red'}}>
